@@ -6,3 +6,9 @@ $(document).on('click','.add',function () {
     var subTotal = itemPrice * itemQuantity;
    row.find('.subtotal').html(subTotal.toFixed(2));
 });
+
+//Remove button function
+$(document).on('click', '.remove', function () {
+    var row = $(this).closest('tr');
+    row.remove();
+});
