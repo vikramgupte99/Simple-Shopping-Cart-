@@ -1,3 +1,6 @@
+$(document).ready(function () {
+
+
 //Add button function
 $(document).on('click','.add',function () {
     var row = $(this).closest('tr');
@@ -9,7 +12,7 @@ $(document).on('click','.add',function () {
 });
 
 //Remove button function
-$(document).on('click', '.remove', function () {
+$(document).on('click','.remove',function () {
     var row = $(this).closest('tr');
     row.remove();
     updateTotal();
@@ -42,4 +45,6 @@ $(document).on('submit','.addNewItem',function (event) {
         $('.newItem').val('');
         $('.newPrice').val('');
        });
+
+});       
 
