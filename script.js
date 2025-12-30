@@ -38,5 +38,8 @@ $(document).on('submit','.addNewItem',function (event) {
         '<td class="subtotal">0</td>' +
         '</tr>'
         );
+        updateTotal();
+        $('.newItem').val('');
+        $('.newPrice').val('');
        });
 
